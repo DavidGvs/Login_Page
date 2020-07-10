@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="1134.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegisterViewController">
+   <children>
+      <ImageView fitHeight="1088.0" fitWidth="1544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/vector-APR-2020-34.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="435.0" layoutY="276.0" prefHeight="35.0" prefWidth="390.0" style="-fx-background-color: #303030; -fx-background-radius: 30;" text="Bem Vindo - Insira os seus dados" textAlignment="CENTER" textFill="#ffb900" AnchorPane.topAnchor="276.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVoltar" layoutX="544.0" layoutY="662.0" mnemonicParsing="false" onAction="#onbtnVoltarAction" text="Voltar" AnchorPane.topAnchor="662.0">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TextField fx:id="txtUser" alignment="CENTER" layoutX="544.0" layoutY="401.0" prefHeight="35.0" prefWidth="171.0" promptText="Username" AnchorPane.topAnchor="401.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPass1" alignment="CENTER" layoutX="544.0" layoutY="467.0" onKeyTyped="#ontxtPass1KeyTyped" prefHeight="35.0" prefWidth="171.0" promptText="Password" AnchorPane.topAnchor="467.0">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="txtPass2" alignment="CENTER" layoutX="544.0" layoutY="533.0" onKeyTyped="#ontxtPass2KeyTyped" prefHeight="35.0" prefWidth="171.0" promptText="Repita a Password" AnchorPane.topAnchor="533.0">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <TextField fx:id="txtMail" alignment="CENTER" layoutX="544.0" layoutY="617.0" prefHeight="35.0" prefWidth="171.0" promptText="Email Adress" AnchorPane.topAnchor="599.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="btnRegistar" layoutX="647.0" layoutY="661.0" mnemonicParsing="false" onAction="#onbtnRegistarAction" prefHeight="30.0" prefWidth="67.0" text="Registar" AnchorPane.topAnchor="661.0">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <ToggleButton fx:id="tbVer1" layoutX="715.0" layoutY="469.0" mnemonicParsing="false" onAction="#ontbVer1Action" prefHeight="30.0" prefWidth="42.0" text="Ver">
+         <font>
+            <Font size="13.0" />
+         </font></ToggleButton>
+      <ToggleButton fx:id="tbVer2" layoutX="715.0" layoutY="535.0" mnemonicParsing="false" onAction="#ontbVer2Action" prefHeight="30.0" prefWidth="42.0" text="Ver">
+         <font>
+            <Font size="13.0" />
+         </font></ToggleButton>
+      <TextField fx:id="txtRepPass1" alignment="CENTER" layoutX="544.0" layoutY="467.0" onKeyTyped="#ontxtRepPass1KeyTyped" prefHeight="35.0" prefWidth="171.0" promptText="Password" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="txtRepPass2" alignment="CENTER" layoutX="544.0" layoutY="533.0" onKeyTyped="#ontxtRepPass2KeyTyped" prefHeight="35.0" prefWidth="171.0" promptText="Repita a Password" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

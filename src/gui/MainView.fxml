@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="1033.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <children>
+      <ImageView fitHeight="894.0" fitWidth="1581.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/19.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="696.0" layoutY="274.0" text="Login Page" textAlignment="CENTER" textFill="#ff7b00" AnchorPane.topAnchor="274.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistar" layoutX="711.0" layoutY="521.0" mnemonicParsing="false" onAction="#onbtnRegistarAction" text="Registar" AnchorPane.topAnchor="521.0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtUser" alignment="CENTER" layoutX="710.0" layoutY="401.0" prefHeight="35.0" prefWidth="155.0" promptText="Username" AnchorPane.topAnchor="401.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPass" alignment="CENTER" layoutX="711.0" layoutY="457.0" onKeyTyped="#ontxtPassKeyTyped" prefHeight="35.0" prefWidth="155.0" promptText="Password" AnchorPane.topAnchor="457.0">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <Button fx:id="btnLogin" layoutX="811.0" layoutY="521.0" mnemonicParsing="false" onAction="#onbtnLoginAction" text="Login" AnchorPane.topAnchor="521.0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtRepPass" alignment="CENTER" layoutX="711.0" layoutY="457.0" onKeyTyped="#ontxtRepPassKeyTyped" prefHeight="35.0" prefWidth="155.0" promptText="Password" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ToggleButton fx:id="tbVer" layoutX="866.0" layoutY="459.0" mnemonicParsing="false" onAction="#ontbVerAction" prefHeight="26.0" prefWidth="46.0" text="Ver">
+         <font>
+            <Font size="14.0" />
+         </font></ToggleButton>
+   </children>
+</AnchorPane>
